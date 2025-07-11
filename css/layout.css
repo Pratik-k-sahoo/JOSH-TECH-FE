@@ -38,3 +38,7 @@
 .position-absolute {
   position: absolute;
 }
+
+.grid {
+  display: grid;
+}
