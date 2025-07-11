@@ -72,3 +72,22 @@ button {
   font-style: bold;
   color: #FFFFFF;
 }
+
+input {
+  padding: 19px 39px;
+  width: 273px;
+  background: #F4F4F4;
+  border: 1px solid #E8E8E8;
+  border-radius: 39px;
+}
+
+input::placeholder {
+  width: 71px;
+  height: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  color: #18171D;
+}

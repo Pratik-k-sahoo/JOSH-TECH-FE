@@ -401,3 +401,97 @@ border-radius: 16.19px 16.19px 0px 0px;
 width: 509.56px;
 height: 342.83px;
 }
+
+.cta {
+  align-items: flex-end;
+  padding: 43px 0px;
+  width: 1440px;
+  height: 725px;
+  margin: auto;
+  color: rgba(37, 43, 66, 1);
+}
+
+.cta-content {
+  align-items: flex-start;
+  padding: 0px 50px;
+  gap: 50px;
+  width: 1548.23px;
+  height: 638px;
+}
+
+.left-container {
+  padding: 0px;
+  width: 854.23px;
+  height: 532px;
+  align-self: flex-end;
+}
+
+.right-container {
+  align-items: flex-start;
+  padding: 0px 63px;
+  padding-top: 122px;
+  gap: 15px;
+  width: 544px;
+  height: 500px;
+  align-self: center;
+}
+
+.screen-content {
+  align-items: flex-end;
+  padding: 0px;
+  gap: 47.46px;
+  width: 854.23px;
+  height: 514px;
+}
+
+.cta-text-content {
+  align-items: flex-start;
+  padding: 0px;
+  gap: 7px;
+  width: 318px;
+  height: 165px;
+}
+
+.cta-action-content {
+  align-items: flex-start;
+  padding: 9px;
+  width: 480px;
+  height: 199px;
+  flex: none;
+  order: 2;
+  align-self: flex-start;
+  flex-grow: 0;
+}
+
+.cta-mailing {
+  padding: 33px 0px;
+  gap: 12px;
+  width: 460px;
+  height: 126px;
+  align-self: flex-start;
+}
+
+.cta-action-btn-holder {
+  Width: 175px;
+  Height: 58px;
+}
+
+.partner {
+  padding: 80px 0px;
+  gap: 80px;
+  width: 1440px;
+  height: 932px;
+  margin: auto;
+  color: rgba(37, 43, 66, 1);
+  border: 2px solid red;
+}
+
+.partner-text-content {
+  padding: 0;
+  padding-top: 38px;
+  width: 550px;
+  height: 222px;
+  gap: 18px;
+  border: 2px solid green;
+}
+
