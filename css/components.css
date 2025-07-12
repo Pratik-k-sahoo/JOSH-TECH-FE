@@ -903,7 +903,6 @@ textarea.message {
 }
 
 .footer-menu {
-  border: 2px solid red;
   display: grid;
   grid-template-columns: 170px 186px 186px;
   gap: 20px
@@ -923,5 +922,37 @@ textarea.message {
 }
 
 .footer-contact {
-  border: 2px solid yellow;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.footer-map img, .footer-mobile img {
+  color: white;
+}
+
+.footer-icon {
+  width: 41px;
+  height: 41px;
+  background: white;
+}
+
+.footer-contact-icon {
+  width: 46px;
+  height: 46px;
+  background: white;
+}
+
+.map-icon {
+  mask: url('../resources/map.png') no-repeat center;
+  mask-size: contain;
+}
+
+.mobile-icon {
+  mask: url('../resources/mobile.png') no-repeat center;
+  mask-size: contain;
+}
+
+.footer-socials {
+  padding: 20px 0;
+  gap: 24px;
 }
