@@ -53,7 +53,6 @@ font-weight: 400;
 font-size: 16px;
 line-height: 23px;
 letter-spacing: 0.1px;
-color: #374754;
 }
 
 p {
@@ -62,7 +61,6 @@ p {
   line-height: 25px;
   text-align: center;
   letter-spacing: 0.2px;
-  color: rgba(55, 71, 84, 1);
 }
 
 button {
@@ -79,18 +77,18 @@ button {
   font-weight: 700;
   font-style: bold;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
-input {
-  padding: 19px 39px;
-  width: 273px;
+input, textarea {
+  width: 100%;
+  padding: 19px 20px;
   background: #F4F4F4;
   border: 1px solid #E8E8E8;
   border-radius: 39px;
 }
 
-input::placeholder {
-  width: 71px;
+input::placeholder, textarea::placeholder {
   height: 16px;
   font-style: normal;
   font-weight: 400;

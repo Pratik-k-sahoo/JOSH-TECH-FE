@@ -567,15 +567,318 @@ height: 100%;
 .testimonial {
   width: 1439px;
   margin: auto;
-  border: 2px solid red;
   align-items: flex-start;
   padding: 0px;
 /* height: 774px; */
-
 }
 
 .testimonial-content {
-padding: 100px 0px;
-gap: 80px;
-width: 100%;
+  padding: 100px 0px;
+  gap: 80px;
+  width: 100%;
+}
+
+.testimonial-text-content {
+  width: 305px;
+  height: 75px;
+  text-align: center;
+}
+
+.testimonial-menu {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+width: 980px;
+height: 420px;
+position: relative;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.swiper-wrapper {
+  height: 315px;
+}
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  background: rgba(32, 145, 249, 1);
+  border: 1px solid gray;
+  width: 23px;
+  height: 23px;
+}
+
+.swiper-pagination-bullet-active {
+  border: 1px solid gray;
+  background: white;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination {
+  bottom: 1px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.testimony-details {
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  padding: 0 0px 2px 0;
+  text-align: center;
+}
+
+.client {
+  align-items: flex-end;
+  gap: 13px;
+  padding: 0;
+  justify-self: flex-end;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.client-text-content {
+  text-align: start;
+  padding-top: 10px;
+}
+
+.client-text-content h6 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.client-text-content p {
+font-size: 15px;
+line-height: 28px;
+}
+
+.pricing {
+  width: 1777px;
+  height: 1155px;
+  background: rgba(37, 43, 66, 1);
+}
+
+.pricing-content {
+  text-align: center;
+  padding: 100px 0;
+  gap: 90px;
+  width: 100%;
+  height: 100%;
+}
+
+.pricing-text-content {
+  width: 550px;
+  height: 182;
+  gap: 15px;
+}
+
+.pricing-text-content h2, .pricing-text-content h4 {
+  color: white;
+}
+
+.pricing-menu {
+  justify-content: center;
+  padding: 0px;
+  gap: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+.pricing-item {
+  padding: 40px;
+  gap: 30px;
+  width: 335px;
+  height: 607px;
+  background: white;
+  border: 1px solid #DEDEDE;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  color: black;
+}
+
+.pricing-item-active {
+  padding: 83px 40px;
+  height: 693px;
+  background: #2091F9;
+  color: white;
+}
+
+.pricing-heading {
+  width: 147px;
+}
+
+.pricing-price {
+  align-items: flex-start;
+  height: 61px;
+}
+
+.pricing-amount {
+  padding: 0px 10px;
+  gap: 10px;
+  height: 104px;
+  align-self: center;
+}
+
+.pricing-price-details {
+align-items: flex-start;
+padding: 0px;
+width: 80px;
+height: 51px;
+align-self: flex-start;
+}
+
+.pricing-list {
+  padding:20px 0 0 0px;
+  gap: 23px;
+  height: 240px;
+  align-self: stretch;
+}
+
+.pricing-list p {
+  font-size: 15px;
+}
+
+.pricing-btn-holder {
+  margin-top: 5px;
+  width: 255px;
+  height: 56px;
+}
+
+.pricing-btn-holder button.active {
+  background: white !important;;
+  color: #2091F9 !important;
+}
+
+.contact {
+  width: 1440px;
+  margin: auto;
+  padding: 52px;
+  padding-top: 152px;
+}
+
+.contact-content {
+  width: 100%;
+  padding: 50px;
+  gap:50px;
+}
+
+.contact-header {
+  gap:15px;
+  width: 550px;
+  flex-wrap: wrap;
+  text-wrap: wrap;
+}
+
+.contact-header h2 {
+  color: rgba(37, 43, 66, 1);
+}
+
+.contact-header h4 {
+  color: rgba(55, 71, 84, 1);
+}
+
+.contact-details {
+  width: 100%;
+  gap: 50px;
+  color: rgba(37, 43, 66, 1);
+}
+
+.contact-form-input {
+  margin: 10px 5px;
+  width: 453px;
+  gap: 45px;
+  /* border: 2px solid purple; */
+  padding: 50px;
+  border: 1px solid #DDDDDD;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  border-radius: 20px;
+}
+
+textarea.message {
+  border-radius: 0;
+  height: 193px;
+  padding: 23px 20px;
+  resize: none;
+}
+
+.form-btn-holder {
+  width: 145px;
+  align-self: flex-start;
+}
+
+.form-btn-holder button {
+  padding: 18px 38px;
+}
+
+
+.contact-location {
+  width: calc(100% - 453px);
+  padding: 30px 0;
+  gap: 50px;
+}
+
+.contact-address {
+  gap: 15px;
+}
+
+.contact-map {
+  margin-top: 30px;
+}
+
+.contact-social {
+  align-items: flex-start;
+  height: 60px;
+  padding: 10px;
+}
+
+.contact-social-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  height: 100%;
+  padding: 48px 8px;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  background-color: #2091F9;
+}
+
+.twitter-icon {
+  mask: url('../resources/twitter.svg') no-repeat center;
+  mask-size: contain;
+}
+
+.facebook-icon {
+  mask: url('../resources/facebook.svg') no-repeat center;
+  mask-size: contain;
+}
+
+.linkedin-icon {
+  mask: url('../resources/linkedin.svg') no-repeat center;
+  mask-size: contain;
 }
