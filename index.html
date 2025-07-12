@@ -73,7 +73,7 @@
 				<div class="header-logo flex-row flex-align-center position-absolute">
 					<div class="logo-container flex-row flex-align-center">
 						<div class="logo-holder flex-row">
-							<img src="./resources/logo.png" alt="" />
+							<img src="./resources/logo.png" alt="FIGMA" />
 						</div>
 					</div>
 				</div>
@@ -113,7 +113,7 @@
 				<div class="feature-menu flex-row">
 					<div class="feature-items flex-column">
 						<div class="feature-item-icon flex-row flex-justify-center">
-							<img src="./resources/feature1.svg" alt="" />
+							<img src="./resources/feature1.svg" alt="feature1" />
 						</div>
 						<h3>OpenType features Variable fonts</h3>
 						<p>
@@ -123,7 +123,7 @@
 					</div>
 					<div class="feature-items flex-column">
 						<div class="feature-item-icon flex-row flex-justify-center">
-							<img src="./resources/feature2.svg" alt="" />
+							<img src="./resources/feature2.svg" alt="feature2" />
 						</div>
 						<h3>Design with real data</h3>
 						<p>
@@ -133,7 +133,7 @@
 					</div>
 					<div class="feature-items flex-column">
 						<div class="feature-item-icon flex-row flex-justify-center">
-							<img src="./resources/feature3.svg" alt="" />
+							<img src="./resources/feature3.svg" alt="feature3" />
 						</div>
 						<h3>Fastest way to take action</h3>
 						<p>
@@ -147,7 +147,7 @@
 					<div class="feature-video-container">
 						<div class="feature-video-button" id="play-pause">
 							<button class="position-absolute btn-primary">
-								<img src="./resources/play.svg" alt="" />
+								<img src="./resources/play.svg" alt="play" />
 							</button>
 						</div>
 						<video
@@ -190,11 +190,11 @@
 			</div>
 		</section>
 
-		<section class="cta flex-column">
+		<section class="cta flex-column position-relative">
 			<div class="cta-content flex-row">
 				<div class="left-container flex-row flex-align-center">
 					<div class="screen-content flex-column">
-						<img src="./resources/newsletter.svg" alt="" />
+						<img src="./resources/newsletter.svg" alt="newsletter" />
 					</div>
 				</div>
 				<div class="right-container flex-column">
@@ -205,10 +205,18 @@
 					<div class="cta-action-content flex-column">
 						<h3>Subscribe to our Newsletter</h3>
 						<p>Available exclusivery on Figmaland</p>
-						<form action="" class="cta-mailing flex-row flex-align-center">
-							<input type="text" placeholder="Your Email" />
+						<form
+							class="cta-mailing flex-row flex-align-center"
+							onsubmit="handleSubscriptionForm(event)"
+						>
+							<input
+								type="text"
+								name="email"
+								required
+								placeholder="Your Email"
+							/>
 							<div class="cta-action-btn-holder">
-								<button class="btn-primary">Subscribe</button>
+								<button type="button" class="btn-primary">Subscribe</button>
 							</div>
 						</form>
 					</div>
@@ -229,25 +237,25 @@
 					<div class="partner-details flex-column flex-align-center">
 						<h6>Client Name</h6>
 						<div class="logo google">
-							<img src="./resources/google.svg" alt="" />
+							<img src="./resources/google.svg" alt="google" />
 						</div>
 					</div>
 					<div class="partner-details flex-column flex-align-center">
 						<h6>Client Name</h6>
 						<div class="logo amazon">
-							<img src="./resources/amazon.png" alt="" />
+							<img src="./resources/amazon.png" alt="amazon" />
 						</div>
 					</div>
 					<div class="partner-details flex-column flex-align-center">
 						<h6>Client Name</h6>
 						<div class="logo microsoft">
-							<img src="./resources/microsoft.png" alt="" />
+							<img src="./resources/microsoft.png" alt="microsoft" />
 						</div>
 					</div>
 					<div class="partner-details flex-column flex-align-center">
 						<h6>Client Name</h6>
 						<div class="logo uber">
-							<img src="./resources/uber.png" alt="" />
+							<img src="./resources/uber.png" alt="uber" />
 						</div>
 					</div>
 				</div>
@@ -255,25 +263,25 @@
 					<div class="partner-details flex-column flex-align-center">
 						<h6>Client Name</h6>
 						<div class="logo dropbox">
-							<img src="./resources/dropbox.png" alt="" />
+							<img src="./resources/dropbox.png" alt="dropbox" />
 						</div>
 					</div>
 					<div class="partner-details flex-column flex-align-center">
 						<h6>Client Name</h6>
 						<div class="logo google">
-							<img src="./resources/google.svg" alt="" />
+							<img src="./resources/google.svg" alt="google" />
 						</div>
 					</div>
 					<div class="partner-details flex-column flex-align-center">
 						<h6>Client Name</h6>
 						<div class="logo uber">
-							<img src="./resources/uber.png" alt="" />
+							<img src="./resources/uber.png" alt="uber" />
 						</div>
 					</div>
 					<div class="partner-details flex-column flex-align-center">
 						<h6>Client Name</h6>
 						<div class="logo amazon">
-							<img src="./resources/amazon.png" alt="" />
+							<img src="./resources/amazon.png" alt="amazon" />
 						</div>
 					</div>
 				</div>
@@ -296,7 +304,7 @@
 							<div class="swiper-slide">
 								<div class="testimony-details flex-column flex-align-center">
 									<div class="brandname">
-										<img src="./resources/ibm.png" alt="" />
+										<img src="./resources/ibm.png" alt="ibm" />
 									</div>
 									<h4>
 										Most calendars are designed for teams. Slate is designed for
@@ -306,7 +314,7 @@
 										class="client flex-row flex-align-center flex-justify-center"
 									>
 										<div class="avatar">
-											<img src="./resources/avatar.png" alt="" />
+											<img src="./resources/avatar.png" alt="avatar" />
 										</div>
 										<div class="client-text-content flex-column">
 											<h6>John Doe</h6>
@@ -318,7 +326,7 @@
 							<div class="swiper-slide">
 								<div class="testimony-details flex-column flex-align-center">
 									<div class="brandname">
-										<img src="./resources/ibm.png" alt="" />
+										<img src="./resources/ibm.png" alt="ibm" />
 									</div>
 									<h4>
 										Most calendars are designed for teams. Slate is designed for
@@ -328,7 +336,7 @@
 										class="client flex-row flex-align-center flex-justify-center"
 									>
 										<div class="avatar">
-											<img src="./resources/avatar.png" alt="" />
+											<img src="./resources/avatar.png" alt="avatar" />
 										</div>
 										<div class="client-text-content flex-column">
 											<h6>John Doe</h6>
@@ -340,7 +348,7 @@
 							<div class="swiper-slide">
 								<div class="testimony-details flex-column flex-align-center">
 									<div class="brandname">
-										<img src="./resources/ibm.png" alt="" />
+										<img src="./resources/ibm.png" alt="ibm" />
 									</div>
 									<h4>
 										Most calendars are designed for teams. Slate is designed for
@@ -350,7 +358,7 @@
 										class="client flex-row flex-align-center flex-justify-center"
 									>
 										<div class="avatar">
-											<img src="./resources/avatar.png" alt="" />
+											<img src="./resources/avatar.png" alt="avatar" />
 										</div>
 										<div class="client-text-content flex-column">
 											<h6>John Doe</h6>
@@ -468,7 +476,10 @@
 				</div>
 				<div class="contact-details flex-row flex-justify-center">
 					<div class="contact-form flex-column flex-align-center">
-						<form class="contact-form-input flex-column flex-align-center" onsubmit="handleFormSubmit(event)">
+						<form
+							class="contact-form-input flex-column flex-align-center"
+							onsubmit="handleFormSubmit(event)"
+						>
 							<h3>Contact Us</h3>
 							<input
 								type="text"
@@ -477,21 +488,22 @@
 								aria-label="Your Name"
 								placeholder="Your Name"
 							/>
-							<input type="email" name="email" required aria-label="Your Email" placeholder="Your Email" />
+							<input
+								type="email"
+								name="email"
+								required
+								aria-label="Your Email"
+								placeholder="Your Email"
+							/>
 							<textarea
 								name="message"
-                required
-                aria-label="Your message"
+								required
+								aria-label="Your message"
 								class="message"
 								placeholder="Your Message"
 							></textarea>
 							<div class="form-btn-holder">
-								<button
-									type="submit"
-									class="btn-primary"
-								>
-									Send
-								</button>
+								<button type="submit" class="btn-primary">Send</button>
 							</div>
 						</form>
 					</div>
@@ -500,7 +512,7 @@
 							<div
 								class="contact-address-item flex-column flex-align-center flex-justify-center"
 							>
-								<img src="./resources/map.png" alt="" />
+								<img src="./resources/map.png" alt="map" />
 								<h6>
 									6386 Spring St undefined Anchorage, Georgia 12473 United
 									States
@@ -509,13 +521,13 @@
 							<div
 								class="contact-address-item flex-column flex-align-center flex-justify-center"
 							>
-								<img src="./resources/mobile.png" alt="" />
+								<img src="./resources/mobile.png" alt="mobile" />
 								<h6>(843) 555-0130</h6>
 							</div>
 							<div
 								class="contact-address-item flex-column flex-align-center flex-justify-center"
 							>
-								<img src="./resources/mail.png" alt="" />
+								<img src="./resources/mail.png" alt="mail box" />
 								<h6>willie.jennings@example.com</h6>
 							</div>
 						</div>

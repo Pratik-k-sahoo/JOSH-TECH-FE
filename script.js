@@ -63,3 +63,9 @@ const handleFormSubmit = (e) => {
 	confirmationModal.classList.remove("hidden");
   document.body.style.overflow = 'hidden';
 };
+
+const handleSubscriptionForm = (e) => {
+  e.preventDefault();
+	confirmationModal.classList.remove("hidden");
+	document.body.style.overflow = "hidden";
+}
