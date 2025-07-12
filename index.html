@@ -70,7 +70,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="logo flex-row flex-align-center position-absolute">
+				<div class="header-logo flex-row flex-align-center position-absolute">
 					<div class="logo-container flex-row flex-align-center">
 						<div class="logo-holder flex-row">
 							<img src="./resources/logo.png" alt="" />
@@ -83,7 +83,7 @@
 					<div
 						class="hero-heading-text-container flex-column flex-align-center"
 					>
-						<h1>The best products start with Figma</h1>
+						<h1 class="text-light">The best products start with Figma</h1>
 						<h4>
 							Most calenders are designed for teams. Slate is designed for
 							freelancer
@@ -94,7 +94,7 @@
 					class="hero-container flex-column flex-align-center hero-button-holder flex-justify-center"
 				>
 					<div class="hero-btn-holder flex-column">
-						<button>Try For Free</button>
+						<button class="btn-primary">Try For Free</button>
 					</div>
 				</div>
 			</main>
@@ -145,12 +145,16 @@
 
 				<div class="feature-screen flex-column flex-align-center">
 					<div class="feature-video-container">
-						<div class="feature-video-button">
-							<button class="position-absolute">
+						<div class="feature-video-button" id="play-pause">
+							<button class="position-absolute btn-primary">
 								<img src="./resources/play.svg" alt="" />
 							</button>
 						</div>
-						<div class="screen position-absolute"></div>
+						<video
+							id="video-playback"
+							src="./resources/chaiaurcode.mp4"
+							class="screen position-absolute"
+						></video>
 					</div>
 				</div>
 			</div>
@@ -167,7 +171,7 @@
 						</h4>
 					</div>
 					<div class="hero-item-action">
-						<button>Try For Free</button>
+						<button class="btn-primary">Try For Free</button>
 					</div>
 				</div>
 				<div class="hero-item flex-column flex-align-center">
@@ -204,7 +208,7 @@
 						<form action="" class="cta-mailing flex-row flex-align-center">
 							<input type="text" placeholder="Your Email" />
 							<div class="cta-action-btn-holder">
-								<button>Subscribe</button>
+								<button class="btn-primary">Subscribe</button>
 							</div>
 						</form>
 					</div>
@@ -276,7 +280,7 @@
 			</div>
 			<div class="partner-action">
 				<div class="partner-action-btn-holder">
-					<button>Try For Free</button>
+					<button class="btn-primary">Try For Free</button>
 				</div>
 			</div>
 		</section>
@@ -394,7 +398,7 @@
 							<p>Pricing Feature</p>
 						</div>
 						<div class="pricing-btn-holder">
-							<button>Order Now</button>
+							<button class="btn-primary">Order Now</button>
 						</div>
 					</div>
 					<div
@@ -421,7 +425,7 @@
 							<p>Pricing Feature</p>
 						</div>
 						<div class="pricing-btn-holder">
-							<button class="active">Order Now</button>
+							<button class="btn-secondary">Order Now</button>
 						</div>
 					</div>
 					<div class="pricing-item flex-column flex-align-center">
@@ -446,14 +450,14 @@
 							<p>Pricing Feature</p>
 						</div>
 						<div class="pricing-btn-holder">
-							<button>Order Now</button>
+							<button class="btn-primary">Order Now</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="contact">
+		<section class="contact position-relative">
 			<div class="contact-content flex-column flex-align-center">
 				<div class="contact-header flex-column flex-align-center">
 					<h2>Contact Us</h2>
@@ -464,46 +468,63 @@
 				</div>
 				<div class="contact-details flex-row flex-justify-center">
 					<div class="contact-form flex-column flex-align-center">
-						<form
-							action=""
-							class="contact-form-input flex-column flex-align-center"
-						>
+						<form class="contact-form-input flex-column flex-align-center" onsubmit="handleFormSubmit(event)">
 							<h3>Contact Us</h3>
-							<input type="text" placeholder="Your Name" />
-							<input type="email" placeholder="Your Email" />
+							<input
+								type="text"
+								name="fullname"
+								required
+								aria-label="Your Name"
+								placeholder="Your Name"
+							/>
+							<input type="email" name="email" required aria-label="Your Email" placeholder="Your Email" />
 							<textarea
-								name=""
-								id=""
+								name="message"
+                required
+                aria-label="Your message"
 								class="message"
 								placeholder="Your Message"
 							></textarea>
 							<div class="form-btn-holder">
-								<button>Send</button>
+								<button
+									type="submit"
+									class="btn-primary"
+								>
+									Send
+								</button>
 							</div>
 						</form>
 					</div>
 					<div class="contact-location flex-column">
-						<div
-							class="contact-address"
-						>
-							<div class="contact-address-item flex-column flex-align-center flex-justify-center">
+						<div class="contact-address">
+							<div
+								class="contact-address-item flex-column flex-align-center flex-justify-center"
+							>
 								<img src="./resources/map.png" alt="" />
 								<h6>
 									6386 Spring St undefined Anchorage, Georgia 12473 United
 									States
 								</h6>
 							</div>
-							<div class="contact-address-item flex-column flex-align-center flex-justify-center">
+							<div
+								class="contact-address-item flex-column flex-align-center flex-justify-center"
+							>
 								<img src="./resources/mobile.png" alt="" />
 								<h6>(843) 555-0130</h6>
 							</div>
-							<div class="contact-address-item flex-column flex-align-center flex-justify-center">
+							<div
+								class="contact-address-item flex-column flex-align-center flex-justify-center"
+							>
 								<img src="./resources/mail.png" alt="" />
 								<h6>willie.jennings@example.com</h6>
 							</div>
 						</div>
-						<div class="contact-map flex-row flex-justify-center flex-align-center">
-							<div class="contact-map-container flex-row flex-justify-center flex-align-center">
+						<div
+							class="contact-map flex-row flex-justify-center flex-align-center"
+						>
+							<div
+								class="contact-map-container flex-row flex-justify-center flex-align-center"
+							>
 								<iframe
 									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3743.0846203109104!2d85.82713297364138!3d20.255325012576996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a71574ce0fed%3A0xfd299c40a2937c9b!2s163%2C%20Indira%20Park%20St%2C%20near%20Star%20Coaching%20Centre%2C%20Forest%20Park%2C%20Bhubaneswar%2C%20Odisha%20751009!5e0!3m2!1sen!2sin!4v1752326941852!5m2!1sen!2sin"
 									width="516px"
@@ -514,68 +535,87 @@
 							</div>
 						</div>
 						<div class="contact-social">
-              <div class="contact-social-container">
-                <div class="icon twitter-icon"></div>
-                <div class="icon facebook-icon"></div>
-                <div class="icon linkedin-icon"></div>
-              </div>
-            </div>
+							<div class="contact-social-container">
+								<div class="icon twitter-icon"></div>
+								<div class="icon facebook-icon"></div>
+								<div class="icon linkedin-icon"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div
+				id="confirmation-modal"
+				class="modal-confirm position-absolute flex-center hidden"
+			>
+				<div class="confirm-content flex-center flex-column">
+					<h1>Your query sent successfully</h1>
+					<div class="close-btn-holder">
+						<button id="modal-btn" class="w-full h-full btn-primary">
+							CLOSE
+						</button>
 					</div>
 				</div>
 			</div>
 		</section>
 
-    <footer>
-      <div class="footer-content">
-        <div class="footer-menu">
-          <div class="footer-item flex-column">
-            <h3>Pages</h3>
-            <div class="footer-list flex-column">
-              <p>Home</p>
-              <p>Features</p>
-              <p>Partners</p>
-              <p>Pricing</p>
-              <p>Contact</p>
-            </div>
-          </div>
-          <div class="footer-item flex-column">
-            <h3>Tomothy</h3>
-            <div class="footer-list flex-column">
-              <p>Eleanor Edwards</p>
-              <p>Ted Robertson</p>
-              <p>Annette Russell</p>
-              <p>Jennie Mckinney</p>
-              <p>Gloria Richards</p>
-            </div>
-          </div>
-          <div class="footer-item flex-column">
-            <h3>Jane Black</h3>
-            <div class="footer-list flex-column">
-              <p>Philip Jones</p>
-              <p>Product</p>
-              <p>Colleen Russell</p>
-              <p>Marvin Hawkins</p>
-              <p>Bruce Simmmons</p>
-            </div>
-          </div>
-        </div>
-        <div class="footer-contact flex-column">
-          <div class="footer-map footer-contact-items flex-row flex-align-center">
-            <div class="footer-contact-icon map-icon"></div>
-            <p>7480 Mistwood Hollo</p>
-          </div>
-          <div class="footer-mobile footer-contact-items flex-row flex-align-center">
-            <div class="footer-contact-icon mobile-icon"></div>
-            <p>(239) 555-0108</p>
-          </div>
-          <div class="footer-socials footer-contact-items flex-row flex-align-center">
-            <div class="footer-icon twitter-icon"></div>
-            <div class="footer-icon facebook-icon"></div>
-            <div class="footer-icon linkedin-icon"></div>
-          </div>
-        </div>
-      </div>
-    </footer>
+		<footer>
+			<div class="footer-content">
+				<div class="footer-menu">
+					<div class="footer-item flex-column">
+						<h3>Pages</h3>
+						<div class="footer-list flex-column">
+							<p>Home</p>
+							<p>Features</p>
+							<p>Partners</p>
+							<p>Pricing</p>
+							<p>Contact</p>
+						</div>
+					</div>
+					<div class="footer-item flex-column">
+						<h3>Tomothy</h3>
+						<div class="footer-list flex-column">
+							<p>Eleanor Edwards</p>
+							<p>Ted Robertson</p>
+							<p>Annette Russell</p>
+							<p>Jennie Mckinney</p>
+							<p>Gloria Richards</p>
+						</div>
+					</div>
+					<div class="footer-item flex-column">
+						<h3>Jane Black</h3>
+						<div class="footer-list flex-column">
+							<p>Philip Jones</p>
+							<p>Product</p>
+							<p>Colleen Russell</p>
+							<p>Marvin Hawkins</p>
+							<p>Bruce Simmmons</p>
+						</div>
+					</div>
+				</div>
+				<div class="footer-contact flex-column">
+					<div
+						class="footer-map footer-contact-items flex-row flex-align-center"
+					>
+						<div class="footer-contact-icon map-icon"></div>
+						<p>7480 Mistwood Hollo</p>
+					</div>
+					<div
+						class="footer-mobile footer-contact-items flex-row flex-align-center"
+					>
+						<div class="footer-contact-icon mobile-icon"></div>
+						<p>(239) 555-0108</p>
+					</div>
+					<div
+						class="footer-socials footer-contact-items flex-row flex-align-center"
+					>
+						<div class="footer-icon twitter-icon"></div>
+						<div class="footer-icon facebook-icon"></div>
+						<div class="footer-icon linkedin-icon"></div>
+					</div>
+				</div>
+			</div>
+		</footer>
 
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="./script.js"></script>
