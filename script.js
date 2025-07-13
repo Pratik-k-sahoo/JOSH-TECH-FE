@@ -15,20 +15,6 @@ var swiper = new Swiper(".mySwiper", {
 const playPauseBtn = document.getElementById("play-pause");
 const playback = document.getElementById("video-playback");
 
-const observer = new IntersectionObserver(
-	([e]) => {
-		if (e.isIntersecting) {
-			// playback.play();
-		} else {
-			playPauseBtn.classList.remove("hidden");
-			playback.pause();
-		}
-	},
-	{ threshold: 0.5 }
-);
-
-observer.observe(playback);
-
 playPauseBtn.addEventListener("click", (e) => {
 	playback.play();
 	playPauseBtn.classList.add("hidden");
@@ -43,6 +29,27 @@ playback.addEventListener("click", () => {
 		console.log("play");
 		playback.play();
 		playPauseBtn.classList.add("hidden");
+	}
+});
+
+const observer = new IntersectionObserver(
+	([e]) => {
+		if (e.isIntersecting) {
+			// playback.play();
+		} else {
+			playPauseBtn.classList.remove("hidden");
+			playback.pause();
+		}
+	},
+	{ threshold: 0.5 }
+);
+
+observer.observe(playback);
+
+document.addEventListener("visibilitychange", () => {
+	if (document["hidden"]) {
+		playPauseBtn.classList.remove("hidden");
+		playback.pause();
 	}
 });
 
