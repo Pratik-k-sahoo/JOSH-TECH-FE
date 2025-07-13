@@ -15,6 +15,20 @@ var swiper = new Swiper(".mySwiper", {
 const playPauseBtn = document.getElementById("play-pause");
 const playback = document.getElementById("video-playback");
 
+const observer = new IntersectionObserver(
+	([e]) => {
+		if (e.isIntersecting) {
+			// playback.play();
+		} else {
+			playPauseBtn.classList.remove("hidden");
+			playback.pause();
+		}
+	},
+	{ threshold: 0.5 }
+);
+
+observer.observe(playback);
+
 playPauseBtn.addEventListener("click", (e) => {
 	playback.play();
 	playPauseBtn.classList.add("hidden");
@@ -52,20 +66,24 @@ console.log(typeof pricingItems);
 });
 
 const modalBtn = document.getElementById("modal-btn");
+const contactForm = document.getElementById("contact-form-id");
 const confirmationModal = document.getElementById("confirmation-modal");
 modalBtn.addEventListener("click", () => {
 	confirmationModal.classList.add("hidden");
-  document.body.style.overflow = "auto";
+	document.body.style.overflow = "auto";
+	contactForm.reset();
 });
 
 const handleFormSubmit = (e) => {
 	e.preventDefault();
-	confirmationModal.classList.remove("hidden");
-  document.body.style.overflow = 'hidden';
-};
-
-const handleSubscriptionForm = (e) => {
-  e.preventDefault();
+	const email = document
+		.getElementsByTagName("input")
+		["contact-email"].value.trim();
+	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	if (!emailRegex.test(email)) {
+		alert("Invalid email");
+		return false;
+	}
 	confirmationModal.classList.remove("hidden");
 	document.body.style.overflow = "hidden";
-}
+};
