@@ -210,7 +210,7 @@
 
 				<div class="feature-screen flex-column flex-align-center py-52">
 					<div class="feature-video-container position-relative flex-center">
-						<div class="feature-video-button flex-center" id="play-pause">
+						<div class="feature-video-button flex-center position-absolute" id="play-pause">
 							<button class="btn-primary flex-center w-full h-full text-center">
 								<img
 									src="./resources/play.svg"
@@ -222,7 +222,7 @@
 						<video
 							id="video-playback"
 							src="./resources/figma-vid.mp4"
-							class="screen position-absolute"
+							class="screen"
 							fetchpriority="high"
 						></video>
 					</div>
@@ -244,7 +244,7 @@
 						<button class="btn-primary">Try For Free</button>
 					</div>
 				</div>
-				<div class="hero-item flex-column flex-align-center px-10 py-10 gap-8">
+				<div class="hero-item flex-column flex-align-center px-10 py-10 gap-8 position-relative">
 					<div
 						class="mac-book flex-column flex-align-center position-relative px-10 py-10"
 					>
@@ -252,8 +252,6 @@
 							class="position-absolute screen-mask w-full h-full"
 							src="./resources/mac-screen.png"
 							alt="Account Activity"
-							width="481.42px"
-							height="300.86px"
 						/>
 						<div class="position-absolute grip"></div>
 						<div class="position-absolute base-bottom"></div>
