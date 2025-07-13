@@ -53,7 +53,6 @@ header {
 
 .navbar {
   width: 100%;
-  align-self: center;
   height: 156px;
   flex-wrap: wrap;
   padding: 0 150px;

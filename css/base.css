@@ -122,3 +122,7 @@ footer {
   height: 567px;
   gap: 125px
 }
+
+a {
+  text-decoration: none;
+}

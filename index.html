@@ -29,7 +29,7 @@
 		/>
 	</head>
 	<body>
-		<header class="flex-column flex-align-center p-0">
+		<header id="header" class="flex-column flex-align-center p-0">
 			<div class="header-bg-content">
 				<div class="gradient-bg position-absolute">
 					<div class="rectangle position-absolute"></div>
@@ -37,19 +37,29 @@
 			</div>
 			<nav class="navbar position-relative flex-row flex-center gap-60">
 				<div class="menu flex-row flex-align-center p-0">
-					<a class="menu-item flex-row flex-align-center px-10 py-10"
+					<a
+						class="menu-item flex-row flex-align-center px-10 py-10 text-light"
+						href="/"
 						><span class="menu-item-text text-center">Home</span></a
 					>
-					<a class="menu-item flex-row flex-align-center px-10 py-10"
+					<a
+						class="menu-item flex-row flex-align-center px-10 py-10 text-light"
+						href="#features"
 						><span class="menu-item-text text-center">Product</span></a
 					>
-					<a class="menu-item flex-row flex-align-center px-10 py-10"
+					<a
+						class="menu-item flex-row flex-align-center px-10 py-10 text-light"
+						href="#pricing"
 						><span class="menu-item-text text-center">Pricing</span></a
 					>
-					<a class="menu-item flex-row flex-align-center px-10 py-10"
+					<a
+						class="menu-item flex-row flex-align-center px-10 py-10 text-light"
+						href="#testimonials"
 						><span class="menu-item-text text-center">About</span></a
 					>
-					<a class="menu-item flex-row flex-align-center px-10 py-10"
+					<a
+						class="menu-item flex-row flex-align-center px-10 py-10 text-light"
+						href="#contact-us"
 						><span class="menu-item-text text-center">Contact</span></a
 					>
 				</div>
@@ -129,7 +139,7 @@
 			</main>
 		</header>
 
-		<section class="feature p-0">
+		<section id="features" class="feature p-0">
 			<div class="feature-content flex-column flex-align-center p-0 gap-80">
 				<div
 					class="feature-header flex-column flex-align-center text-dark gap-30 py-10 text-center"
@@ -220,7 +230,7 @@
 			</div>
 		</section>
 
-		<section class="hero flex-column flex-align-center text-dark">
+		<section id="hero" class="hero flex-column flex-align-center text-dark">
 			<div class="hero-content flex-row py-48 gap-50">
 				<div class="hero-item flex-column flex-align-start p-0 gap-60">
 					<div class="hero-item-text flex-column flex-align-start gap-25">
@@ -257,6 +267,7 @@
 		</section>
 
 		<section
+			id="cta"
 			class="cta flex-column position-relative flex-align-end py-43 text-dark"
 		>
 			<div class="cta-content flex-row flex-align-start px-50 gap-50">
@@ -302,6 +313,7 @@
 		</section>
 
 		<section
+			id="partner"
 			class="partner flex-column flex-align-center py-80 gap-80 text-dark text-center"
 		>
 			<div class="partner-text-content flex-column flex-align-center gap-25">
@@ -434,7 +446,10 @@
 			</div>
 		</section>
 
-		<section class="testimonial flex-column p-0 flex-center text-center">
+		<section
+			id="testimonials"
+			class="testimonial flex-column p-0 flex-center text-center"
+		>
 			<div
 				class="testimonial-content flex-column flex-align-center gap-80 py-100 text-center text-dark"
 			>
@@ -555,7 +570,7 @@
 			</div>
 		</section>
 
-		<section class="pricing bg-dark text-center">
+		<section id="pricing" class="pricing bg-dark text-center">
 			<div class="pricing-content flex-column flex-align-center py-100 gap-80">
 				<div
 					class="pricing-text-content flex-column flex-align-center gap-25 py-10"
@@ -665,6 +680,7 @@
 		</section>
 
 		<section
+			id="contact-us"
 			class="position-relative px-50 py-50 contact text-center text-dark"
 		>
 			<div
@@ -680,7 +696,7 @@
 				<div class="contact-details flex-row flex-justify-center gap-50">
 					<div class="contact-form flex-column flex-align-center">
 						<form
-              id="contact-form-id"
+							id="contact-form-id"
 							class="contact-form-input flex-column flex-align-center gap-45 px-50 py-50"
 							onsubmit="handleFormSubmit(event)"
 						>
@@ -796,7 +812,7 @@
 			</div>
 		</section>
 
-		<footer class="bg-dark flex-center">
+		<footer id="footer" class="bg-dark flex-center">
 			<div class="footer-content grid">
 				<div class="footer-menu grid gap-20">
 					<div class="footer-item flex-column gap-15">
