@@ -22,11 +22,9 @@ playPauseBtn.addEventListener("click", (e) => {
 
 playback.addEventListener("click", () => {
 	if (playPauseBtn.classList.contains("hidden")) {
-		console.log("Pause");
 		playback.pause();
 		playPauseBtn.classList.remove("hidden");
 	} else {
-		console.log("play");
 		playback.play();
 		playPauseBtn.classList.add("hidden");
 	}
@@ -55,7 +53,6 @@ document.addEventListener("visibilitychange", () => {
 
 let pricingItems = document.getElementsByClassName("pricing-item");
 const holderBtn = document.querySelectorAll(".pricing-btn-holder button");
-console.log(typeof pricingItems);
 [...pricingItems].forEach((item) => {
 	item.addEventListener("click", () => {
 		const btn = item.querySelector(".pricing-btn-holder button");
