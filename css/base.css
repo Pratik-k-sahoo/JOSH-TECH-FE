@@ -1,20 +1,24 @@
 :root {
-  --color-secondary: #ffffff;
-  --color-black: #000000;
-  --color-dark: #252B42;
   --color-primary: #2091F9;
+  --color-secondary: #ffffff;
+  --color-light: #F4F4F4;
+  --color-dark: #252B42;
+  --color-black: #000000;
   --color-primary-hover: #6db5f8;
   --color-secondary-hover: #ffffffcb;
-  --color-light: #F4F4F4;
   --color-border: #E8E8E8;
+  --color-tertiary: #374754;
+  --color-placeholer: #18171D;
+  --laptop-base-bottom: #9FA2A5;
+  --laptop-base-bottom: #D8D8D8;
 
   --font-main: "Open Sans", sans-serif;
 
-  --font-sm: 14px;
-  --font-md: 18px;
+  --font-xs: 14px;
+  --font-sm: 18px;
+  --font-md: 28px;
   --font-lg: 48px;
   --font-xl: 74px;
-  --font-h4: 28px;
 
   --radius-full: 9999px;
   --radius-lg: 39px;
@@ -42,16 +46,13 @@ h1 {
   font-weight: 700;
   font-size: 74px;
   line-height: 84px;
-  text-align: center;
   letter-spacing: 0.1px;
 }
 
 h2 {
-  padding: 10px 0;
   font-weight: 400;
   font-size: 48px;
   line-height: 55px;
-  /* text-align: center; */
   letter-spacing: 0.1px;
 }
 
@@ -59,7 +60,6 @@ h3 {
 font-weight: 700;
 font-size: 20px;
 line-height: 28px;
-text-align: center;
 letter-spacing: 0.1px;
 }
 
@@ -67,7 +67,6 @@ h4 {
   font-weight: 400;
   font-size: 28px;
   line-height: 40px;
-  text-align: center;
   letter-spacing: 0.1px;
 }
 
@@ -82,7 +81,6 @@ p {
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
-  text-align: center;
   letter-spacing: 0.2px;
 }
 
@@ -95,7 +93,6 @@ button {
   font-size: 20px;
   line-height: 20px;
   letter-spacing: 0.2px;
-  text-align: center;
   font-weight: 700;
   font-style: bold;
   cursor: pointer;
@@ -103,7 +100,7 @@ button {
 
 input, textarea {
   width: 100%;
-  padding: 19px 20px;
+  height: 100%;
   background: #F4F4F4;
   border: 1px solid #E8E8E8;
   border-radius: 39px;
@@ -121,10 +118,6 @@ input::placeholder, textarea::placeholder {
 
 footer {
   width: 1777px;
-  background: rgba(37, 43, 66, 1);
   height: 567px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 125px
 }

@@ -15,73 +15,104 @@
 			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 		/>
 		<link rel="stylesheet" href="./css/style.css" />
+		<link
+			rel="preload"
+			fetchpriority="high"
+			as="image"
+			href="./resources/headerBG.jpg"
+		/>
+		<link
+			rel="preload"
+			fetchpriority="high"
+			as="video"
+			href="./resources/chaiaurcode.mp4"
+		/>
 	</head>
 	<body>
-		<header class="flex-column flex-align-center">
+		<header class="flex-column flex-align-center p-0">
 			<div class="header-bg-content">
-				<div class="gradient-bg">
-					<div class="rectangle"></div>
+				<div class="gradient-bg position-absolute">
+					<div class="rectangle position-absolute"></div>
 				</div>
 			</div>
-			<nav class="navbar">
-				<div class="menu flex-row flex-align-center">
-					<a class="menu-item flex-row flex-align-center"
-						><span class="menu-item-text">Home</span></a
+			<nav class="navbar position-relative">
+				<div class="menu flex-row flex-align-center p-0 position-absolute">
+					<a class="menu-item flex-row flex-align-center px-10 py-10"
+						><span class="menu-item-text text-center">Home</span></a
 					>
-					<a class="menu-item flex-row flex-align-center"
-						><span class="menu-item-text">Product</span></a
+					<a class="menu-item flex-row flex-align-center px-10 py-10"
+						><span class="menu-item-text text-center">Product</span></a
 					>
-					<a class="menu-item flex-row flex-align-center"
-						><span class="menu-item-text">Pricing</span></a
+					<a class="menu-item flex-row flex-align-center px-10 py-10"
+						><span class="menu-item-text text-center">Pricing</span></a
 					>
-					<a class="menu-item flex-row flex-align-center"
-						><span class="menu-item-text">About</span></a
+					<a class="menu-item flex-row flex-align-center px-10 py-10"
+						><span class="menu-item-text text-center">About</span></a
 					>
-					<a class="menu-item flex-row flex-align-center"
-						><span class="menu-item-text">Contact</span></a
+					<a class="menu-item flex-row flex-align-center px-10 py-10"
+						><span class="menu-item-text text-center">Contact</span></a
 					>
 				</div>
-				<div class="nav-social flex-row flex-align-center">
-					<div class="nav-social-container flex-row">
-						<div class="nav-socialmedia flex-row flex-align-center">
+
+				<div
+					class="nav-social flex-row flex-align-center p-0 position-absolute"
+				>
+					<div class="nav-social-container flex-row flex-space-between p-0">
+						<div
+							class="nav-socialmedia flex-row flex-align-center flex-space-between p-0"
+						>
 							<div class="nav-element-outline">
 								<img
-									class="twitter position-absolute"
+									class="twitter position-absolute w-full h-full"
 									src="./resources/twitter.svg"
 									alt="Twitter"
+									width="40px"
+									height="35px"
 								/>
 							</div>
 							<div class="nav-element-outline">
 								<img
-									class="facebook position-absolute"
+									class="facebook position-absolute w-full h-full"
 									src="./resources/facebook.svg"
 									alt="Facebook"
+									width="38px"
+									height="38px"
 								/>
 							</div>
 							<div class="nav-element-outline">
 								<img
-									class="linkedin position-absolute"
+									class="linkedin position-absolute w-full h-full"
 									src="./resources/linkedin.svg"
 									alt="Linked-In"
-									width="32.02px"
-									height="32.02px"
+									width="38px"
+									height="38px"
 								/>
 							</div>
 						</div>
 					</div>
 				</div>
+
 				<div class="header-logo flex-row flex-align-center position-absolute">
-					<div class="logo-container flex-row flex-align-center">
-						<div class="logo-holder flex-row">
-							<img src="./resources/logo.png" alt="FIGMA" />
+					<div class="logo-container flex-row flex-align-center p-0">
+						<div
+							class="logo-holder flex-row px-10 py-10 gap-10 flex-align-start"
+						>
+							<img
+								src="./resources/logo.png"
+								alt="FIGMA"
+								class="w-full h-full"
+							/>
 						</div>
 					</div>
 				</div>
 			</nav>
-			<main class="header-hero flex-column">
-				<div class="hero-container flex-column flex-align-center hero-heading">
+
+			<main
+				class="header-hero flex-column gap-40 position-relative flex-justify-start flex-align-center"
+			>
+				<div class="hero-container flex-column hero-heading flex-justify-start">
 					<div
-						class="hero-heading-text-container flex-column flex-align-center"
+						class="hero-heading-text-container flex-column flex-center gap-30"
 					>
 						<h1 class="text-light">The best products start with Figma</h1>
 						<h4>
@@ -91,81 +122,112 @@
 					</div>
 				</div>
 				<div
-					class="hero-container flex-column flex-align-center hero-button-holder flex-justify-center"
+					class="hero-container flex-column flex-align-center hero-button-holder flex-justify-center p-0"
 				>
-					<div class="hero-btn-holder flex-column">
+					<div class="hero-btn-holder flex-column flex-align-start">
 						<button class="btn-primary">Try For Free</button>
 					</div>
 				</div>
 			</main>
 		</header>
 
-		<section class="feature">
-			<div class="feature-content flex-column flex-align-center">
-				<div class="feature-header flex-column flex-align-center">
-					<h2>Features</h2>
-					<h4>
+		<section class="feature p-0">
+			<div class="feature-content flex-column flex-align-center p-0 gap-80">
+				<div
+					class="feature-header flex-column flex-align-center text-dark gap-30 py-10 text-center"
+				>
+					<h2 class="text-center text-dark">Features</h2>
+					<h4 class="text-center text-tertiary">
 						Most calenders are designed for teams. Slate is designed for
 						freelancers
 					</h4>
 				</div>
 
-				<div class="feature-menu flex-row">
-					<div class="feature-items flex-column">
+				<div class="feature-menu flex-row p-0 gap-52">
+					<div
+						class="feature-items flex-column gap-20 py-10 flex-align-center text-dark text-center"
+					>
 						<div class="feature-item-icon flex-row flex-justify-center">
-							<img src="./resources/feature1.svg" alt="feature1" />
+							<img
+								src="./resources/feature1.svg"
+								alt="feature1"
+								class="w-full h-full"
+							/>
 						</div>
 						<h3>OpenType features Variable fonts</h3>
-						<p>
+						<p
+							class="text-center px-10 flex-align-center flex-row gap-10 text-tertiary"
+						>
 							Slate helps you see how many more days you need to work to reach
 							your financial goal.
 						</p>
 					</div>
-					<div class="feature-items flex-column">
+					<div
+						class="feature-items flex-column gap-20 py-10 flex-align-center text-dark text-center"
+					>
 						<div class="feature-item-icon flex-row flex-justify-center">
-							<img src="./resources/feature2.svg" alt="feature2" />
+							<img
+								src="./resources/feature2.svg"
+								alt="feature2"
+								class="w-full h-full"
+							/>
 						</div>
 						<h3>Design with real data</h3>
-						<p>
+						<p
+							class="text-center px-10 flex-align-center flex-row gap-10 text-tertiary"
+						>
 							Slate helps you see how many more days you need to work to reach
 							your financial goal.
 						</p>
 					</div>
-					<div class="feature-items flex-column">
+					<div
+						class="feature-items flex-column gap-20 py-10 flex-align-center text-dark text-center"
+					>
 						<div class="feature-item-icon flex-row flex-justify-center">
-							<img src="./resources/feature3.svg" alt="feature3" />
+							<img
+								src="./resources/feature3.svg"
+								alt="feature3"
+								class="w-full h-full"
+							/>
 						</div>
 						<h3>Fastest way to take action</h3>
-						<p>
+						<p
+							class="text-center px-10 flex-align-center flex-row gap-10 text-tertiary"
+						>
 							Slate helps you see how many more days you need to work to reach
 							your financial goal.
 						</p>
 					</div>
 				</div>
 
-				<div class="feature-screen flex-column flex-align-center">
-					<div class="feature-video-container">
-						<div class="feature-video-button" id="play-pause">
-							<button class="position-absolute btn-primary">
-								<img src="./resources/play.svg" alt="play" />
+				<div class="feature-screen flex-column flex-align-center py-52">
+					<div class="feature-video-container position-relative flex-center">
+						<div class="feature-video-button flex-center" id="play-pause">
+							<button class="btn-primary flex-center w-full h-full text-center">
+								<img
+									src="./resources/play.svg"
+									alt="play"
+									class="w-full h-full"
+								/>
 							</button>
 						</div>
 						<video
 							id="video-playback"
 							src="./resources/chaiaurcode.mp4"
 							class="screen position-absolute"
+							fetchpriority="high"
 						></video>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="hero flex-column flex-align-center">
-			<div class="hero-content flex-row">
-				<div class="hero-item flex-column">
-					<div class="hero-item-text flex-column">
-						<h2>Fastest way to organise</h2>
-						<h4>
+		<section class="hero flex-column flex-align-center text-dark">
+			<div class="hero-content flex-row py-48 gap-50">
+				<div class="hero-item flex-column flex-align-start p-0 gap-60">
+					<div class="hero-item-text flex-column flex-align-start gap-25">
+						<h2>Fastest way to organize</h2>
+						<h4 class="text-tertiary">
 							Most calendars are designed for teams. Slate is designed for
 							freelancers
 						</h4>
@@ -174,47 +236,62 @@
 						<button class="btn-primary">Try For Free</button>
 					</div>
 				</div>
-				<div class="hero-item flex-column flex-align-center">
-					<div class="mac-book flex-column flex-align-center">
+				<div class="hero-item flex-column flex-align-center px-10 py-10 gap-8">
+					<div
+						class="mac-book flex-column flex-align-center position-relative px-10 py-10"
+					>
 						<img
-							class="position-absolute screen-mask"
+							class="position-absolute screen-mask w-full h-full"
 							src="./resources/mac-screen.png"
 							alt="Account Activity"
 						/>
 						<div class="position-absolute grip"></div>
 						<div class="position-absolute base-bottom"></div>
 						<div class="position-absolute base"></div>
-						<div class="position-absolute screen-background"></div>
+						<div
+							class="position-absolute screen-background border-box bg-black"
+						></div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="cta flex-column position-relative">
-			<div class="cta-content flex-row">
-				<div class="left-container flex-row flex-align-center">
-					<div class="screen-content flex-column">
-						<img src="./resources/newsletter.svg" alt="newsletter" />
+		<section
+			class="cta flex-column position-relative flex-align-end py-43 text-dark"
+		>
+			<div class="cta-content flex-row flex-align-start px-50 gap-50">
+				<div class="left-container flex-row flex-align-center p-0">
+					<div class="screen-content flex-column flex-align-end p-0">
+						<img
+							src="./resources/newsletter.svg"
+							alt="newsletter"
+							class="w-full h-full"
+						/>
 					</div>
 				</div>
-				<div class="right-container flex-column">
-					<div class="cta-text-content flex-column">
+				<div class="right-container flex-column flex-align-start px-63 gap-15">
+					<div class="cta-text-content flex-column flex-align-start p-0 gap-20">
 						<h3>At your fingertips</h3>
 						<h2>Lightning fast prototyping</h2>
 					</div>
-					<div class="cta-action-content flex-column">
+					<div
+						class="cta-action-content flex-column flex-align-start px-10 py-10"
+					>
 						<h3>Subscribe to our Newsletter</h3>
-						<p>Available exclusivery on Figmaland</p>
+						<p class="text-tertiary">Available exclusivery on Figmaland</p>
 						<form
-							class="cta-mailing flex-row flex-align-center"
+							class="cta-mailing flex-row flex-align-center py-33 gap-15"
 							onsubmit="handleSubscriptionForm(event)"
 						>
-							<input
-								type="text"
-								name="email"
-								required
-								placeholder="Your Email"
-							/>
+							<div class="cta-action-input-holder">
+								<input
+									type="text"
+									name="email"
+									required
+									placeholder="Your Email"
+									class="px-33 py-10 text-placeholder"
+								/>
+							</div>
 							<div class="cta-action-btn-holder">
 								<button type="button" class="btn-primary">Subscribe</button>
 							</div>
@@ -224,181 +301,293 @@
 			</div>
 		</section>
 
-		<section class="partner flex-column flex-align-center">
-			<div class="partner-text-content flex-column flex-align-center">
+		<section
+			class="partner flex-column flex-align-center py-80 gap-80 text-dark text-center"
+		>
+			<div class="partner-text-content flex-column flex-align-center gap-25">
 				<h2>Partners</h2>
-				<h4>
+				<h4 class="text-tertiary">
 					Most calendars are designed for teams. Slate is designed for
 					freelancers
 				</h4>
 			</div>
-			<div class="partner-menu flex-column flex-align-center">
+			<div class="partner-menu flex-column flex-align-center p-0">
 				<div class="partner-item grid">
-					<div class="partner-details flex-column flex-align-center">
-						<h6>Client Name</h6>
-						<div class="logo google">
-							<img src="./resources/google.svg" alt="google" />
+					<div
+						class="partner-details flex-column flex-align-center py-33 px-43 gap-15"
+					>
+						<h6 class="text-tertiary">Client Name</h6>
+						<div class="logo google flex-align-center p-0">
+							<img
+								src="./resources/google.svg"
+								alt="google"
+								class="w-full h-full"
+								width="193px"
+								height="63px"
+							/>
 						</div>
 					</div>
-					<div class="partner-details flex-column flex-align-center">
-						<h6>Client Name</h6>
-						<div class="logo amazon">
-							<img src="./resources/amazon.png" alt="amazon" />
+					<div
+						class="partner-details flex-column flex-align-center py-33 px-43 gap-15"
+					>
+						<h6 class="text-tertiary">Client Name</h6>
+						<div class="logo amazon flex-align-center p-0">
+							<img
+								src="./resources/amazon.png"
+								alt="amazon"
+								class="w-full h-full"
+								width="193px"
+								height="58.14px"
+							/>
 						</div>
 					</div>
-					<div class="partner-details flex-column flex-align-center">
-						<h6>Client Name</h6>
-						<div class="logo microsoft">
-							<img src="./resources/microsoft.png" alt="microsoft" />
+					<div
+						class="partner-details flex-column flex-align-center py-33 px-43 gap-15"
+					>
+						<h6 class="text-tertiary">Client Name</h6>
+						<div class="logo microsoft flex-align-center p-0">
+							<img
+								src="./resources/microsoft.png"
+								alt="microsoft"
+								class="w-full h-full"
+								width="222px"
+								height="77px"
+							/>
 						</div>
 					</div>
-					<div class="partner-details flex-column flex-align-center">
-						<h6>Client Name</h6>
-						<div class="logo uber">
-							<img src="./resources/uber.png" alt="uber" />
+					<div
+						class="partner-details flex-column flex-align-center py-33 px-43 gap-15"
+					>
+						<h6 class="text-tertiary">Client Name</h6>
+						<div class="logo uber flex-align-center p-0">
+							<img
+								src="./resources/uber.png"
+								alt="uber"
+								class="w-full h-full"
+								width="140px"
+								height="77px"
+							/>
 						</div>
 					</div>
 				</div>
 				<div class="partner-item grid">
-					<div class="partner-details flex-column flex-align-center">
-						<h6>Client Name</h6>
-						<div class="logo dropbox">
-							<img src="./resources/dropbox.png" alt="dropbox" />
+					<div
+						class="partner-details flex-column flex-align-center py-33 px-43 gap-15"
+					>
+						<h6 class="text-tertiary">Client Name</h6>
+						<div class="logo dropbox flex-align-center p-0">
+							<img
+								src="./resources/dropbox.png"
+								alt="dropbox"
+								class="w-full h-full"
+								width="229px"
+								height="46px"
+							/>
 						</div>
 					</div>
-					<div class="partner-details flex-column flex-align-center">
-						<h6>Client Name</h6>
-						<div class="logo google">
-							<img src="./resources/google.svg" alt="google" />
+					<div
+						class="partner-details flex-column flex-align-center py-33 px-43 gap-15"
+					>
+						<h6 class="text-tertiary">Client Name</h6>
+						<div class="logo google flex-align-center p-0">
+							<img
+								src="./resources/google.svg"
+								alt="google"
+								class="w-full h-full"
+								width="193px"
+								height="63px"
+							/>
 						</div>
 					</div>
-					<div class="partner-details flex-column flex-align-center">
-						<h6>Client Name</h6>
-						<div class="logo uber">
-							<img src="./resources/uber.png" alt="uber" />
+					<div
+						class="partner-details flex-column flex-align-center py-33 px-43 gap-15"
+					>
+						<h6 class="text-tertiary">Client Name</h6>
+						<div class="logo uber flex-align-center p-0">
+							<img
+								src="./resources/uber.png"
+								alt="uber"
+								class="w-full h-full"
+								width="140px"
+								height="77px"
+							/>
 						</div>
 					</div>
-					<div class="partner-details flex-column flex-align-center">
-						<h6>Client Name</h6>
-						<div class="logo amazon">
-							<img src="./resources/amazon.png" alt="amazon" />
+					<div
+						class="partner-details flex-column flex-align-center py-33 px-43 gap-15"
+					>
+						<h6 class="text-tertiary">Client Name</h6>
+						<div class="logo amazon flex-align-center p-0">
+							<img
+								src="./resources/amazon.png"
+								alt="amazon"
+								class="w-full h-full"
+								width="193px"
+								height="58.14px"
+							/>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="partner-action">
-				<div class="partner-action-btn-holder">
-					<button class="btn-primary">Try For Free</button>
-				</div>
+			<div class="partner-action p-0">
+				<button class="btn-primary">Try For Free</button>
 			</div>
 		</section>
 
-		<section class="testimonial flex-column">
-			<div class="testimonial-content flex-column flex-align-center">
-				<div class="testimonial-text-content">
+		<section class="testimonial flex-column p-0 flex-center text-center">
+			<div
+				class="testimonial-content flex-column flex-align-center gap-80 py-100 text-center text-dark"
+			>
+				<div class="testimonial-text-content py-10">
 					<h2>Testimonials</h2>
 				</div>
-				<div class="testimonial-menu">
-					<div class="swiper mySwiper">
+				<div
+					class="testimonial-menu flex-column flex-align-start p-0 position-relative"
+				>
+					<div class="swiper mySwiper flex-column">
 						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<div class="testimony-details flex-column flex-align-center">
+							<div class="swiper-slide flex-center">
+								<div
+									class="testimony-details flex-column flex-align-center flex-space-between"
+								>
 									<div class="brandname">
-										<img src="./resources/ibm.png" alt="ibm" />
+										<img
+											src="./resources/ibm.png"
+											alt="ibm"
+											class="w-full h-full"
+										/>
 									</div>
-									<h4>
+									<h4 class="text-tertiary">
 										Most calendars are designed for teams. Slate is designed for
 										freelancers who want a simple way to plan their schedule.
 									</h4>
 									<div
-										class="client flex-row flex-align-center flex-justify-center"
+										class="client flex-row flex-align-center flex-justify-center p-0 gap-15"
 									>
-										<div class="avatar">
-											<img src="./resources/avatar.png" alt="avatar" />
+										<div class="avatar flex-center">
+											<img
+												src="./resources/avatar.png"
+												alt="avatar"
+												class="w-full h-full"
+												width="50px"
+												height="50px"
+											/>
 										</div>
-										<div class="client-text-content flex-column">
-											<h6>John Doe</h6>
+										<div class="client-text-content flex-column text-start">
+											<h6 class="text-tertiary">John Doe</h6>
 											<p>Ui designer</p>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="swiper-slide">
-								<div class="testimony-details flex-column flex-align-center">
+							<div class="swiper-slide flex-center">
+								<div
+									class="testimony-details flex-column flex-align-center flex-space-between"
+								>
 									<div class="brandname">
-										<img src="./resources/ibm.png" alt="ibm" />
+										<img
+											src="./resources/ibm.png"
+											alt="ibm"
+											class="w-full h-full"
+										/>
 									</div>
-									<h4>
+									<h4 class="text-tertiary">
 										Most calendars are designed for teams. Slate is designed for
 										freelancers who want a simple way to plan their schedule.
 									</h4>
 									<div
-										class="client flex-row flex-align-center flex-justify-center"
+										class="client flex-row flex-align-center flex-justify-center p-0 gap-15"
 									>
-										<div class="avatar">
-											<img src="./resources/avatar.png" alt="avatar" />
+										<div class="avatar flex-center">
+											<img
+												src="./resources/avatar.png"
+												alt="avatar"
+												class="w-full h-full"
+												width="50px"
+												height="50px"
+											/>
 										</div>
-										<div class="client-text-content flex-column">
-											<h6>John Doe</h6>
+										<div class="client-text-content flex-column text-start">
+											<h6 class="text-tertiary">John Doe</h6>
 											<p>Ui designer</p>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="swiper-slide">
-								<div class="testimony-details flex-column flex-align-center">
+							<div class="swiper-slide flex-center">
+								<div
+									class="testimony-details flex-column flex-align-center flex-space-between"
+								>
 									<div class="brandname">
-										<img src="./resources/ibm.png" alt="ibm" />
+										<img
+											src="./resources/ibm.png"
+											alt="ibm"
+											class="w-full h-full"
+										/>
 									</div>
-									<h4>
+									<h4 class="text-tertiary">
 										Most calendars are designed for teams. Slate is designed for
 										freelancers who want a simple way to plan their schedule.
 									</h4>
 									<div
-										class="client flex-row flex-align-center flex-justify-center"
+										class="client flex-row flex-align-center flex-justify-center p-0 gap-15"
 									>
-										<div class="avatar">
-											<img src="./resources/avatar.png" alt="avatar" />
+										<div class="avatar flex-center">
+											<img
+												src="./resources/avatar.png"
+												alt="avatar"
+												class="w-full h-full"
+												width="50px"
+												height="50px"
+											/>
 										</div>
-										<div class="client-text-content flex-column">
-											<h6>John Doe</h6>
+										<div class="client-text-content flex-column text-start">
+											<h6 class="text-tertiary">John Doe</h6>
 											<p>Ui designer</p>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="swiper-pagination"></div>
+						<div class="swiper-pagination flex-center"></div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="pricing">
-			<div class="pricing-content flex-column flex-align-center">
-				<div class="pricing-text-content flex-column flex-align-center">
+		<section class="pricing bg-dark text-center">
+			<div class="pricing-content flex-column flex-align-center py-100 gap-80">
+				<div
+					class="pricing-text-content flex-column flex-align-center gap-25 py-10"
+				>
 					<h2>Pricing</h2>
 					<h4>
 						Most calendars are designed for teams. Slate is designed for
 						freelancers
 					</h4>
 				</div>
-				<div class="pricing-menu flex-row flex-align-center">
-					<div class="pricing-item flex-column flex-align-center">
+				<div class="pricing-menu flex-row flex-center p-0 gap-50 w-full h-full">
+					<div
+						class="pricing-item px-43 py-43 gap-30 flex-column flex-align-center"
+					>
 						<div class="pricing-heading">
 							<h3>FREE</h3>
 							<h6>Organize across all apps by hand</h6>
 						</div>
-						<div class="pricing-price flex-row">
-							<div class="pricing-amount flex-row flex-align-center">
+						<div class="pricing-price flex-row flex-align-start">
+							<div
+								class="pricing-amount px-10 gap-10 flex-row flex-align-center"
+							>
 								<h1>0</h1>
 							</div>
-							<div class="pricing-price-details flex-column">
+							<div
+								class="pricing-price-details flex-column flex-align-start p-0"
+							>
 								<h3>$</h3>
 								<h6>Per Month</h6>
 							</div>
 						</div>
-						<div class="pricing-list flex-column flex-align-center">
+						<div class="pricing-list flex-column flex-align-center gap-20">
 							<p>Pricing Feature</p>
 							<p>Pricing Feature</p>
 							<p>Pricing Feature</p>
@@ -410,22 +599,26 @@
 						</div>
 					</div>
 					<div
-						class="pricing-item pricing-item-active flex-column flex-align-center"
+						class="pricing-item px-43 py-43 gap-30 pricing-item-active flex-column flex-align-center"
 					>
 						<div class="pricing-heading">
 							<h3>STANDARD</h3>
 							<h6>Organize across all apps by hand</h6>
 						</div>
-						<div class="pricing-price flex-row">
-							<div class="pricing-amount flex-row flex-align-center">
+						<div class="pricing-price flex-row flex-align-start">
+							<div
+								class="pricing-amount flex-row flex-align-cente px-10 gap-10r"
+							>
 								<h1>10</h1>
 							</div>
-							<div class="pricing-price-details flex-column">
+							<div
+								class="pricing-price-details flex-column flex-align-start p-0"
+							>
 								<h3>$</h3>
 								<h6>Per Month</h6>
 							</div>
 						</div>
-						<div class="pricing-list flex-column flex-align-center">
+						<div class="pricing-list flex-column flex-align-center gap-20">
 							<p>Pricing Feature</p>
 							<p>Pricing Feature</p>
 							<p>Pricing Feature</p>
@@ -436,21 +629,27 @@
 							<button class="btn-secondary">Order Now</button>
 						</div>
 					</div>
-					<div class="pricing-item flex-column flex-align-center">
+					<div
+						class="pricing-item px-43 py-43 gap-30 flex-column flex-align-center"
+					>
 						<div class="pricing-heading">
 							<h3>BUSINESS</h3>
 							<h6>Organize across all apps by hand</h6>
 						</div>
-						<div class="pricing-price flex-row">
-							<div class="pricing-amount flex-row flex-align-center">
+						<div class="pricing-price flex-row flex-align-start">
+							<div
+								class="pricing-amount flex-row flex-align-center px-10 gap-10"
+							>
 								<h1>99</h1>
 							</div>
-							<div class="pricing-price-details flex-column">
+							<div
+								class="pricing-price-details flex-column flex-align-start p-0"
+							>
 								<h3>$</h3>
 								<h6>Per Month</h6>
 							</div>
 						</div>
-						<div class="pricing-list flex-column flex-align-center">
+						<div class="pricing-list flex-column flex-align-center gap-20">
 							<p>Pricing Feature</p>
 							<p>Pricing Feature</p>
 							<p>Pricing Feature</p>
@@ -465,74 +664,94 @@
 			</div>
 		</section>
 
-		<section class="contact position-relative">
-			<div class="contact-content flex-column flex-align-center">
-				<div class="contact-header flex-column flex-align-center">
+		<section
+			class="position-relative px-50 py-50 contact text-center text-dark"
+		>
+			<div class="contact-content flex-column flex-align-center gap-50 text-center">
+				<div class="contact-header flex-column flex-align-center gap-25">
 					<h2>Contact Us</h2>
 					<h4>
 						Most calendars are designed for teams. Slate is designed for
 						freelancers
 					</h4>
 				</div>
-				<div class="contact-details flex-row flex-justify-center">
+				<div class="contact-details flex-row flex-justify-center gap-50">
 					<div class="contact-form flex-column flex-align-center">
 						<form
-							class="contact-form-input flex-column flex-align-center"
+							class="contact-form-input flex-column flex-align-center gap-45 px-50 py-50"
 							onsubmit="handleFormSubmit(event)"
 						>
 							<h3>Contact Us</h3>
-							<input
-								type="text"
-								name="fullname"
-								required
-								aria-label="Your Name"
-								placeholder="Your Name"
-							/>
-							<input
-								type="email"
-								name="email"
-								required
-								aria-label="Your Email"
-								placeholder="Your Email"
-							/>
+							<div class="contact-form-input-holder">
+								<input
+									type="text"
+									name="fullname"
+									required
+									aria-label="Your Name"
+									placeholder="Your Name"
+                  class="px-33 py-10 text-placeholder"
+								/>
+							</div>
+							<div class="contact-form-input-holder">
+								<input
+									type="email"
+									name="email"
+									required
+									aria-label="Your Email"
+									placeholder="Your Email"
+                  class="px-33 py-10 text-placeholder"
+								/>
+							</div>
 							<textarea
 								name="message"
 								required
 								aria-label="Your message"
-								class="message"
 								placeholder="Your Message"
+                class="px-20 py-20 text-placeholder message"
 							></textarea>
 							<div class="form-btn-holder">
 								<button type="submit" class="btn-primary">Send</button>
 							</div>
 						</form>
 					</div>
-					<div class="contact-location flex-column">
-						<div class="contact-address">
+					<div class="contact-location flex-column py-43 gap-60">
+						<div class="contact-address gap-15 grid">
 							<div
-								class="contact-address-item flex-column flex-align-center flex-justify-center"
+								class="contact-address-item flex-column flex-align-center flex-justify-center gap-25"
 							>
-								<img src="./resources/map.png" alt="map" />
+								<img
+									src="./resources/map.png"
+									alt="map"
+									class="w-full h-full"
+								/>
 								<h6>
 									6386 Spring St undefined Anchorage, Georgia 12473 United
 									States
 								</h6>
 							</div>
 							<div
-								class="contact-address-item flex-column flex-align-center flex-justify-center"
+								class="contact-address-item flex-column flex-align-center flex-justify-center gap-25"
 							>
-								<img src="./resources/mobile.png" alt="mobile" />
+								<img
+									src="./resources/mobile.png"
+									alt="mobile"
+									class="w-full h-full"
+								/>
 								<h6>(843) 555-0130</h6>
 							</div>
 							<div
-								class="contact-address-item flex-column flex-align-center flex-justify-center"
+								class="contact-address-item flex-column flex-align-center flex-justify-center gap-25"
 							>
-								<img src="./resources/mail.png" alt="mail box" />
+								<img
+									src="./resources/mail.png"
+									alt="mail box"
+									class="w-full h-full"
+								/>
 								<h6>willie.jennings@example.com</h6>
 							</div>
 						</div>
 						<div
-							class="contact-map flex-row flex-justify-center flex-align-center"
+							class="contact-map flex-row flex-justify-center flex-align-center px-8 py-8"
 						>
 							<div
 								class="contact-map-container flex-row flex-justify-center flex-align-center"
@@ -543,14 +762,15 @@
 									height="324px"
 									style="border: 0"
 									loading="lazy"
+									title="Google Map"
 								></iframe>
 							</div>
 						</div>
-						<div class="contact-social">
-							<div class="contact-social-container">
-								<div class="icon twitter-icon"></div>
-								<div class="icon facebook-icon"></div>
-								<div class="icon linkedin-icon"></div>
+						<div class="contact-social flex-align-start px-10 py-10">
+							<div class="contact-social-container flex-align-center px-5 gap-30 h-full">
+								<div class="icon twitter-icon bg-primary mask-contain"></div>
+								<div class="icon facebook-icon bg-primary mask-contain"></div>
+								<div class="icon linkedin-icon bg-primary mask-contain"></div>
 							</div>
 						</div>
 					</div>
@@ -560,7 +780,7 @@
 				id="confirmation-modal"
 				class="modal-confirm position-absolute flex-center hidden"
 			>
-				<div class="confirm-content flex-center flex-column">
+				<div class="confirm-content flex-center flex-column gap-20">
 					<h1>Your query sent successfully</h1>
 					<div class="close-btn-holder">
 						<button id="modal-btn" class="w-full h-full btn-primary">
@@ -571,12 +791,12 @@
 			</div>
 		</section>
 
-		<footer>
-			<div class="footer-content">
-				<div class="footer-menu">
-					<div class="footer-item flex-column">
+		<footer class="bg-dark flex-center">
+			<div class="footer-content grid">
+				<div class="footer-menu grid gap-20">
+					<div class="footer-item flex-column gap-15">
 						<h3>Pages</h3>
-						<div class="footer-list flex-column">
+						<div class="footer-list flex-column flex-align-start gap-20">
 							<p>Home</p>
 							<p>Features</p>
 							<p>Partners</p>
@@ -584,9 +804,9 @@
 							<p>Contact</p>
 						</div>
 					</div>
-					<div class="footer-item flex-column">
+					<div class="footer-item flex-column gap-15">
 						<h3>Tomothy</h3>
-						<div class="footer-list flex-column">
+						<div class="footer-list flex-column flex-align-start gap-20">
 							<p>Eleanor Edwards</p>
 							<p>Ted Robertson</p>
 							<p>Annette Russell</p>
@@ -594,9 +814,9 @@
 							<p>Gloria Richards</p>
 						</div>
 					</div>
-					<div class="footer-item flex-column">
+					<div class="footer-item flex-column gap-15">
 						<h3>Jane Black</h3>
-						<div class="footer-list flex-column">
+						<div class="footer-list flex-column flex-align-start gap-20">
 							<p>Philip Jones</p>
 							<p>Product</p>
 							<p>Colleen Russell</p>
@@ -605,25 +825,25 @@
 						</div>
 					</div>
 				</div>
-				<div class="footer-contact flex-column">
+				<div class="footer-contact flex-column flex-align-start gap-10">
 					<div
 						class="footer-map footer-contact-items flex-row flex-align-center"
 					>
-						<div class="footer-contact-icon map-icon"></div>
+						<div class="footer-contact-icon bg-light map-icon mask-contain"></div>
 						<p>7480 Mistwood Hollo</p>
 					</div>
 					<div
 						class="footer-mobile footer-contact-items flex-row flex-align-center"
 					>
-						<div class="footer-contact-icon mobile-icon"></div>
+						<div class="footer-contact-icon mobile-icon bg-light mask-contain"></div>
 						<p>(239) 555-0108</p>
 					</div>
 					<div
-						class="footer-socials footer-contact-items flex-row flex-align-center"
+						class="footer-socials footer-contact-items flex-row flex-align-center py-20 gap-25"
 					>
-						<div class="footer-icon twitter-icon"></div>
-						<div class="footer-icon facebook-icon"></div>
-						<div class="footer-icon linkedin-icon"></div>
+						<div class="footer-icon twitter-icon bg-light"></div>
+						<div class="footer-icon facebook-icon bg-light"></div>
+						<div class="footer-icon linkedin-icon bg-light"></div>
 					</div>
 				</div>
 			</div>
